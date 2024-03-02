@@ -1,41 +1,37 @@
-# 基于SSM的校园失物招领平台+小程序+论文示例参考
+**[点我查看详情并获取源码](http://blog.cyrobot.top/blog/article/166)💕🤞**
 
-#### 介绍
+**郑重声明：项目经过本地测试，确保可以运行。项目仅供学习和毕业设计参考~**
+
+#### 1.项目介绍
 技术栈+工具：SSM + JSP + MySQL5.7 + IDEA2022 + 原生微信小程序
 
 后端功能: 用户管理、公告管理、报失管理、招领管理、排行榜管理等
 
 小程序：注册登录、发布报失信息、发布招领信息、个人资料等
 
-#### 软件架构
-软件架构说明
+#### 2.项目部署
+
+##### 2.1 后端部署
+
+- 创建数据库，导入项目中的sql文件
+
+- 打开IDEA，导入项目swzl
+
+- 进入 src/applicationContext.properties 1-4行，根据本地数据库的环境修改数据库连接
+
+- 通过idea创建本地tomcat server，启动项目
+
+- http://localhost:8080/swzl/ 管理员账号密码： admin/admin
+
+##### 2.2 小程序端部署
+
+- 打开微信开发工具，微信扫码登录
+
+- 导入swzlxcx， 选用测试号即可
+
+- 测试账号密码： zhangsanfeng/123456
 
 
-#### 安装教程
+**注意！！tomcat server配置单中的Deployment下路径要和上述设置的一致。**
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+**关于一些小伙伴说的图片不显示的问题，这个其实不是问题，你可以在管理端将原有的信息删除，自己在小程序端注册用户，然后发布信息即可。如果想和截图一致，可以将项目中的“测试图片”目录下的“swzl”目录，复制到C盘下，即可解决问题。**
